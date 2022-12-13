@@ -65,7 +65,7 @@ app.post("/create",(req,res)=>{
     console.log(req.body._id);
     var myData=new create(req.body);
     myData.save().then(()=>{
-        res.status(200).render('create', {title:"ToDoList", cont:"TASK SUBMITTED"})
+        res.status(200).render('create', {title:"ToDoList", cont:"TASK ADDED SUCCESFULLY!"})    
     })
 })
 app.get("/show",(req,res)=>{
